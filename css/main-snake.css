@@ -162,10 +162,10 @@ a.snake-link:hover {
 }
 
 .snake-snakebody-alive {
-   background-image: url('/JavaScript-Snake/css/images/snakeblock.png'), url('/JavaScript-Snake/images/snakeblock.png');
+   background-image: url('/JavaScript-Snake/css/images/snakeblock.png');
 }
 .snake-snakebody-dead {
-   background-image: url('/JavaScript-Snake/css/images/deadblock.png'), url('/JavaScript-Snake/images/deadblock.png');
+   background-image: url('/JavaScript-Snake/css/images/deadblock.png');
 }
 
 .snake-food-block {

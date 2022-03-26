@@ -1,8 +1,3 @@
-/*
-JavaScript Snake
-First version by Patrick Gillespie - I've since merged in a good number of github pull requests
-http://patorjk.com/games/snake 
-*/
 
 /**
 * @module Snake
@@ -748,10 +743,7 @@ SNAKE.Board = SNAKE.Board || (function() {
 
             var welcomeTxt = document.createElement("div");
             var fullScreenText = "";
-            if (config.fullScreen) {
-                fullScreenText = "On Windows, press F11 to play in Full Screen mode.";
-            }
-            welcomeTxt.innerHTML = "JavaScript Snake<p></p>Use the <strong>arrow keys</strong> on your keyboard to play the game. " + fullScreenText + "<p></p>";
+            welcomeTxt.innerHTML = "<p></p>Use the <strong>arrow keys</strong> on your keyboard to play the game. " + fullScreenText + "<p></p>";
             var welcomeStart = document.createElement("button");
             welcomeStart.appendChild(document.createTextNode("Play Game"));
             var loadGame = function() {
@@ -782,7 +774,7 @@ SNAKE.Board = SNAKE.Board || (function() {
             tmpElm.className = elmClassName;
 
             var gameEndTxt = document.createElement("div");
-            gameEndTxt.innerHTML = "JavaScript Snake<p></p>" + message + "<p></p>";
+            gameEndTxt.innerHTML = "<p></p>" + message + "<p></p>";
             var gameEndStart = document.createElement("button");
             gameEndStart.appendChild(document.createTextNode("Play Again?"));
 
@@ -810,11 +802,11 @@ SNAKE.Board = SNAKE.Board || (function() {
         }
 
         function createTryAgainElement() {
-            return createGameEndElement("You died :(", "sbTryAgain", "snake-try-again-dialog");
+            return createGameEndElement("Snake Died :(", "sbTryAgain", "snake-try-again-dialog");
         }
 
         function createWinElement() {
-            return createGameEndElement("You win! :D", "sbWin", "snake-win-dialog");
+            return createGameEndElement("You Win! :D", "sbWin", "snake-win-dialog");
         }
 
         function handleEndCondition(elmDialog) {

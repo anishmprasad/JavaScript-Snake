@@ -1,12 +1,8 @@
-/*
-JavaScript Snake
-By Patrick Gillespie
-http://patorjk.com/games/snake
-*/
+
 body {
 	margin:0px;
 	padding:0px;
-    background-color: #FC5454;
+    background-color: #d0cfcf;
 }
 
 #game-area {
@@ -76,7 +72,7 @@ a.snake-link:hover {
 .snake-food-block {
     margin: 0px;
     padding: 0px;
-    background-color: #FF0000;
+    background-color: #bcb3b3;
     border: 0px solid #000080;
     position: absolute;
 }
@@ -85,7 +81,7 @@ a.snake-link:hover {
     margin: 0px;
     padding: 0px;
     position: absolute;
-    background-color: #0000A8;
+    background-color: #dbdbdb;
     border: 0px solid #0000A8;
 }
 
@@ -101,12 +97,12 @@ a.snake-link:hover {
 .snake-welcome-dialog {
     padding: 8px;
     margin: 0px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #dbdbdb;
+    color: #b2b0b0;
     font-family: Verdana, arial, helvetica, sans-serif;
     font-size: 14px;
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
     width: 300px;
     /*height: 150px;*/
@@ -119,8 +115,8 @@ a.snake-link:hover {
 .snake-try-again-dialog, .snake-win-dialog {
     padding: 8px;
     margin: 0px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #dbdbdb;
+    color: #b2b0b0;
     font-family: Verdana, arial, helvetica, sans-serif;
     font-size: 14px;
     position: absolute;

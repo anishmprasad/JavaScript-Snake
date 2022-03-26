@@ -2,7 +2,71 @@
 body {
 	margin:0px;
 	padding:0px;
-    background-color: #d0cfcf;
+    background-color: #d8d9dc;
+}
+
+html {
+    font-size: 62.5%;
+}
+  
+@media (max-width: 400px) {
+    html {
+        font-size: 46.875%;
+    }
+}
+  
+@media (min-width: 800px) and (max-width:1219px) {
+    html {
+        font-size: 78.125%;
+    }
+}
+
+@media (min-width:1220px) and (max-width: 1439px) {
+    html {
+        font-size: 90%;
+    }
+} 
+
+@media (min-width: 1440px) and (max-width: 1599px){
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1999px){
+    html {
+        font-size: 110%;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2600px) {
+    html {
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 2601px) and (max-width: 3000px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+@media (min-width: 3001px) and (max-width: 3600px) {
+    html {
+        font-size: 140%;
+    }
+}
+
+@media (min-width: 3601px) and (max-width: 4000px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 4001px) and (max-width: 4600px) {
+    html {
+        font-size: 160%;
+    }
 }
 
 .pagenotfound{
@@ -15,6 +79,27 @@ body {
     width: 100%;
     margin-top: 5%;
     font-family: monospace;
+}
+
+.notfound{
+    color: rgb(33, 33, 33);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+    text-align: center;
+    user-select: none;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.notfound-desc{
+    color: rgb(33, 33, 33);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    opacity: 0.6;
+    max-width: 43.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 #game-area {
@@ -85,8 +170,8 @@ a.snake-link:hover {
 .snake-food-block {
     margin: 0px;
     padding: 0px;
-    background-color: #bcb3b3;
-    border: 0px solid #000080;
+    background-color: #d1d1d1;
+    border: 0px solid #d1d1d1;
     position: absolute;
     z-index: 3;
 }
@@ -95,8 +180,8 @@ a.snake-link:hover {
     margin: 0px;
     padding: 0px;
     position: absolute;
-    background-color: #dbdbdb;
-    border: 0px solid #0000A8;
+    background-color: #f0f2f5;
+    border: 0px solid #f0f2f5;
 }
 
 .snake-game-container {
@@ -111,12 +196,12 @@ a.snake-link:hover {
 .snake-welcome-dialog {
     padding: 8px;
     margin: 0px;
-    background-color: #dbdbdb;
+    /* background-color: #d8d9dc; */
     color: #b2b0b0;
     font-family: Verdana, arial, helvetica, sans-serif;
     font-size: 14px;
     position: absolute;
-    bottom: 51px;
+    bottom: 52px;
     left: 50%;
     width: 300px;
     /*height: 150px;*/
@@ -129,7 +214,7 @@ a.snake-link:hover {
 .snake-try-again-dialog, .snake-win-dialog {
     padding: 8px;
     margin: 0px;
-    background-color: #dbdbdb;
+    /* background-color: #dbdbdb; */
     color: #b2b0b0;
     font-family: Verdana, arial, helvetica, sans-serif;
     font-size: 14px;

@@ -776,7 +776,7 @@ SNAKE.Board = SNAKE.Board || (function() {
             var gameEndTxt = document.createElement("div");
             gameEndTxt.innerHTML = "<p></p>" + message + "<p></p>";
             var gameEndStart = document.createElement("button");
-            gameEndStart.appendChild(document.createTextNode("Play Again?"));
+            gameEndStart.appendChild(document.createTextNode("Play Again"));
 
             var reloadGame = function () {
                 tmpElm.style.display = "none";

@@ -77,8 +77,9 @@ html {
     align-items: center;
     vertical-align: middle;
     width: 100%;
-    margin-top: 5%;
+    height: 100%;
     font-family: monospace;
+    justify-content: center;
 }
 
 .notfound{

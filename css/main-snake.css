@@ -173,6 +173,7 @@ a.snake-link:hover {
     padding: 0px;
     background-color: #d1d1d1;
     border: 0px solid #d1d1d1;
+    animation: beat .25s infinite alternate;
     position: absolute;
     z-index: 3;
 }
@@ -211,6 +212,10 @@ a.snake-link:hover {
     text-align: center;
     display: block;
 }
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.1); }
+}
 
 .snake-try-again-dialog, .snake-win-dialog {
     padding: 8px;
@@ -220,7 +225,8 @@ a.snake-link:hover {
     font-family: Verdana, arial, helvetica, sans-serif;
     font-size: 14px;
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    bottom: 52px;
     left: 50%;
     width: 300px;
     height: 100px;
